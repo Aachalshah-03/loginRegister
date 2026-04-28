@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/auth/login", form);
+      await axios.post("https://loginregister-backend.onrender.com/api/auth/login", form);
       navigate("/dashboard");
     } catch (err) {
       toast.error("Invalid credentials ❌");
